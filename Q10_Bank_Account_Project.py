@@ -1,15 +1,15 @@
 class BankAccount:
 
-    def __init__(self, account_number, holder_name, balance):
+    def __init__(self, account_number, holder_name, balance):    # store account details
         self.account_number = account_number
         self.holder_name = holder_name
         self.balance = balance
 
-    def deposit(self, amount):
+    def deposit(self, amount):                            # add amount to balance
         self.balance = self.balance + amount
         print("Amount Deposited Successfully")
 
-    def withdraw(self, amount):
+    def withdraw(self, amount):                    # withdraw only if balance is enough
 
         if amount > self.balance:
             print("Insufficient Balance")
@@ -18,7 +18,7 @@ class BankAccount:
             self.balance = self.balance - amount
             print("Withdrawal Successful")
 
-    def check_balance(self):
+    def check_balance(self):                        # show current balance
         print("Current Balance :", self.balance)
 
 
@@ -33,11 +33,11 @@ while True:
     print("3. Check Balance")
     print("4. Exit")
 
-    choice = int(input("Enter Choice: "))
+    choice = int(input("Enter Choice: "))             # taking menu choice
 
-    if choice == 1:
+    if choice == 1:                                    # user enters deposit amount
 
-        amount = float(input("Enter Amount: "))
+        amount = float(input("Enter Amount: "))         # user enters withdraw amount
         account.deposit(amount)
 
     elif choice == 2:
