@@ -1,10 +1,10 @@
 students = {
 
-    "Anil": {"Marks": 89, "Grade": "A"},
-    "Ravi": {"Marks": 75, "Grade": "B"},
-    "Priya": {"Marks": 95, "Grade": "A+"},
-    "Kiran": {"Marks": 82, "Grade": "B+"},
-    "Sneha": {"Marks": 91, "Grade": "A"}
+    "San": {"Marks": 89, "Grade": "A"},
+    "Maggie": {"Marks": 75, "Grade": "B"},
+    "Rahul": {"Marks": 95, "Grade": "A+"},
+    "Anu": {"Marks": 82, "Grade": "B+"},
+    "Suresh": {"Marks": 91, "Grade": "A"}
 
 }
 
