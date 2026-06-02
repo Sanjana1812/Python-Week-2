@@ -1,6 +1,6 @@
 class Library:
 
-    def __init__(self):
+    def __init__(self):                # store books and availability
 
         self.books = {
             "Python": "Available",
@@ -8,7 +8,7 @@ class Library:
             "DBMS": "Available"
         }
 
-    def add_book(self):
+    def add_book(self):                # add new book into library
 
         book = input("Enter Book Name: ")
 
@@ -16,7 +16,7 @@ class Library:
 
         print("Book Added Successfully")
 
-    def issue_book(self):
+    def issue_book(self):                # issue book if available
 
         book = input("Enter Book Name to Issue: ")
 
@@ -32,9 +32,9 @@ class Library:
                 print("Book Already Issued")
 
         else:
-            print("Book Not Found")
+            print("Book Not Found")            
 
-    def return_book(self):
+    def return_book(self):               # return book and mark available         
 
         book = input("Enter Book Name to Return: ")
 
@@ -47,7 +47,7 @@ class Library:
         else:
             print("Book Not Found")
 
-    def display_books(self):
+    def display_books(self):                # show only available books
 
         print("\nAvailable Books:")
 
@@ -57,7 +57,7 @@ class Library:
 
                 print(book)
 
-library = Library()
+library = Library()                #creating object
 
 while True:
 
@@ -69,7 +69,7 @@ while True:
     print("4. Display Available Books")
     print("5. Exit")
 
-    choice = int(input("Enter Choice: "))
+    choice = int(input("Enter Choice: "))                # taking user choice
 
     if choice == 1:
         library.add_book()
