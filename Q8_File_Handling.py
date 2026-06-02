@@ -2,11 +2,11 @@
 
 file = open("students.txt", "w")
 
-file.write("Anil\n")
-file.write("Ravi\n")
-file.write("Priya\n")
-file.write("Kiran\n")
-file.write("Sneha\n")
+file.write("San\n")
+file.write("Maggie\n")
+file.write("Rahul\n")
+file.write("Anu\n")
+file.write("Suresh\n")
 
 file.close()
 
