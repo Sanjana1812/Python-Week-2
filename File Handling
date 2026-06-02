@@ -1,0 +1,30 @@
+# Writing student names into file
+
+file = open("students.txt", "w")
+
+file.write("Anil\n")
+file.write("Ravi\n")
+file.write("Priya\n")
+file.write("Kiran\n")
+file.write("Sneha\n")
+
+file.close()
+
+
+# Reading file
+
+file = open("students.txt", "r")
+
+students = file.readlines()
+
+print("Student Names:\n")
+
+for name in students:
+    print(name.strip())
+
+file.close()
+
+
+# Counting total students
+
+print("\nTotal Students :", len(students))
