@@ -1,0 +1,34 @@
+students = {
+
+    "Anil": {"Marks": 89, "Grade": "A"},
+    "Ravi": {"Marks": 75, "Grade": "B"},
+    "Priya": {"Marks": 95, "Grade": "A+"},
+    "Kiran": {"Marks": 82, "Grade": "B+"},
+    "Sneha": {"Marks": 91, "Grade": "A"}
+
+}
+
+print("Student Details\n")
+
+for name, details in students.items():
+
+    print("Name :", name)
+    print("Marks :", details["Marks"])
+    print("Grade :", details["Grade"])
+    print()
+
+
+# Finding highest marks
+highest = 0
+top_student = ""
+
+for name, details in students.items():
+
+    if details["Marks"] > highest:
+        highest = details["Marks"]
+        top_student = name
+
+
+print("Student with Highest Marks")
+print("Name :", top_student)
+print("Marks :", highest)
